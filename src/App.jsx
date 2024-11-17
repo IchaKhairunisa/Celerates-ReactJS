@@ -1,33 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
-  const [count, setCount] = useState(0)
+  function formatToIDRCurrency(value) {
+    const formattedValue = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0
+    }).format(value)
 
+    return formattedValue.replace('Rp', 'Rp. ')
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <section className='container px-24 py-4'>
+        <div className="flex flex-col max-w-[370px] flex-wrap p-[16px] bg-[#081116]" >
+          <img src="/assets/images/Espresso.png" alt="" className="block max-h-[300px] mb-4 object-cover" />
+            <div className="flex flex-col gap-2">
+                <h4 className="font-medium text-[20px] text-white">Espresso</h4>
+                <span className="block font-medium text-[14px] text-[#eaeaea]">Espresso</span>
+                <span className="block font-medium text-[20px] text-white">{formatToIDRCurrency(15000)}</span>
+                <div>
+                  <button className="inline-flex items-center justify-center gap-2 p-4 bg-[#6173E6] text-center">
+                      <FontAwesomeIcon icon={faCartShopping} className="mb-0" />
+                      <span>Add to cart</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+      </section>
     </>
   )
 }
