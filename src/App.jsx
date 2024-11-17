@@ -21,3 +21,29 @@ function App() {
 }
 
 export default App
+
+
+
+
+// Menghindari Prop drilling dengan HOC Higher Order Component
+// const parentComponent = () => {
+//   const data = 'celerates'
+//   return <>
+//       <MyCard>
+//           <MyPhoto data={data} />
+//       </MyCard>
+//   </>
+// }
+
+// const MyCard = ({children}) => {
+//   return <>
+//           <p>Text 1</p>
+//           {children}
+//       </>
+// }
+
+// const MyPhoto = ({photo}) => {
+//   return <>
+//       <img src={photo} alt="" />
+//   </>
+// }
