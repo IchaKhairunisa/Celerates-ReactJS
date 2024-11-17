@@ -5,7 +5,7 @@ function formatToIDRCurrency(value) {
       minimumFractionDigits: 0
     }).format(value)
   
-    return formattedValue.replace('Rp', 'Rp. ')
+    return formattedValue
   }
   
   export default formatToIDRCurrency

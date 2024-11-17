@@ -44,5 +44,60 @@ export default function getAllProducts() {
         imageUrl: `/assets/images/Affogato.png`,
         description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
       },
+      {
+        id: 'FBC-BC',
+        slug: 'freshly-brewed-coffee',
+        name: "Freshly Brewed Coffee",
+        category: 'Brewed Coffee',
+        categorySlug: 'brewedcoffee',
+        price: 15_000,
+        stock: 10,
+        imageUrl: `/assets/images/BrewedCoffee.png`,
+        description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
+      },
+      {
+        id: 'CB-BC',
+        slug: 'cold-brew',
+        name: "Cold Brew",
+        category: 'Brewed Coffee',
+        categorySlug: 'brewedcoffee',
+        price: 15_000,
+        stock: 97,
+        imageUrl: `/assets/images/ColdBrew.png`,
+        description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
+      },
+      {
+        id: 'CT-NC',
+        slug: 'chamomile-tea',
+        name: "Chamomile Tea",
+        category: 'Non-Coffee',
+        categorySlug: 'noncoffee',
+        price: 28_000,
+        stock: 50,
+        imageUrl: `/assets/images/ChamomileTea.png`,
+        description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
+      },
+      {
+        id: 'BC-F',
+        slug: 'butter-croissant',
+        name: "Butter Croissant",
+        category: 'Food',
+        categorySlug: 'food',
+        price: 37_000,
+        stock: 50,
+        imageUrl: `/assets/images/ButterBroissant.png`,
+        description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
+      },
+      {
+        id: 'CCC-F',
+        slug: 'chocolate-chip-cookie',
+        name: "Chocolate Chip Cookie",
+        category: 'Food',
+        categorySlug: 'food',
+        price: 32_000,
+        stock: 5,
+        imageUrl: `/assets/images/ChocolateChipCookie.png`,
+        description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
+      },
     ]
   }

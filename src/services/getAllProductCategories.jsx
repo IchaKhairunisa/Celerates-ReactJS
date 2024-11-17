@@ -6,14 +6,14 @@ const getAllProductCategories = ()  => {
         name: `Espresso`
       },
       {
-        id: 'BF',
-        slug: 'brewed-coffee',
+        id: 'BC',
+        slug: 'brewedcoffee',
         name: `Brewed Coffee`
       },
       {
         id: 'NC',
-        slug: 'non-coffee',
-        name: `Non Coffee`
+        slug: 'noncoffee',
+        name: `Non-Coffee`
       },
       {
         id: 'F',

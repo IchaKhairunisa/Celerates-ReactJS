@@ -20,8 +20,8 @@ export default function ProductDetail() {
 
   if(!product) {
     return <>
-              <h1 className="flex w-full h-full text-center items-center justify-center text-4xl text-pink-600">PRODUCT NOT FOUND.</h1>
-          </>
+      <h1 className="flex w-full h-full text-center items-center justify-center text-4xl text-pink-600">PRODUCT NOT FOUND.</h1>
+    </>
   }
   return (
    <>
