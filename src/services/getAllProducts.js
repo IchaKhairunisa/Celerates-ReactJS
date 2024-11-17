@@ -27,7 +27,7 @@ export default function getAllProducts() {
         category: 'Espresso',
         price: 23_000,
         stock: 0,
-        imageUrl: `/assets/images/HotLatte.jpeg`,
+        imageUrl: `/assets/images/HotLatte.png`,
         description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
       },
       {
@@ -37,7 +37,7 @@ export default function getAllProducts() {
         category: 'Espresso',
         price: 25_000,
         stock: 67,
-        imageUrl: `/assets/images/Affogato.jpeg`,
+        imageUrl: `/assets/images/Affogato.png`,
         description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
       },
     ]
