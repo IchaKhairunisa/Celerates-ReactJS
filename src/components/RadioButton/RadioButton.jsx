@@ -27,13 +27,13 @@ export default function RadioButton({ options, defaultValue, onChange }) {
           <span
             className={`w-4 h-4 rounded-full flex items-center justify-center border ${
               selected === option.value
-                ? 'bg-[#6173E6] border-[#6173E6]'
+                ? 'bg-[#ad7f41] border-[#202020]'
                 : 'border-[#656666]'
             }`}
             style={{ width: '16px', height: '16px', borderWidth: '1px' }}
           >
             {selected === option.value && (
-              <span className="w-2.5 h-2.5 bg-[#6173E6] rounded-full"></span>
+              <span className="w-2.5 h-2.5 bg-[#ad7f41] rounded-full"></span>
             )}
           </span>
           <span
